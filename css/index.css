@@ -1,0 +1,17 @@
+#img{
+	margin:100px auto 0;
+}
+#form{
+	margin:20px auto;
+}
+img{
+	-webkit-transition:all 1s ease-in-out;
+	-moz-transition: 1s ease-in-out;
+}
+img:hover{
+	transform:rotate(360deg);
+	-ms-transform:rotate(360deg); /* Internet Explorer */
+	-moz-transform:rotate(360deg); /* Firefox */
+	-webkit-transform:rotate(360deg); /* Safari 和 Chrome */
+	-o-transform:rotate(360deg); /* Opera */
+}
