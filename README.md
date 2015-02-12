@@ -7,3 +7,7 @@
 以后可能会完善下这个小系统
 
 **demo**：[http://studentsign.sinaapp.com/](http://studentsign.sinaapp.com/)
+
+===
+
+更新：增加了JS表单验证和正则表达式验证防止SQL注入，前者已经验证完毕，不输入结果会弹窗警告。（可以试下demo）后者明天验证

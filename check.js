@@ -5,6 +5,27 @@ function set(){
 		return check();
 	}
 }
+/*正则匹配姓名 */
+function regex1(nameString){
+	var re = /^[\u4e00-\u9fa5]{2,5}$/;
+	var string = nameString;
+	var result = re.exec(string);
+	if (result != null)	
+		return true;
+	else
+		return false;
+}
+/*正则匹配学号*/
+function regex2(idString){
+	var re = /\d{6}/;
+	var string = idString;
+	var result = re.exec(string);
+	if (result != null)	
+		return true;
+	else
+		return false;
+}
+
 /*检验函数*/
 function check(){
     var	studentName=form1.name.value;
@@ -14,7 +35,12 @@ function check(){
          alert("姓名和学号不能为空");
          return false;
 	}
-	return true;
+	if ( regex1(studentName) && regex2(studentId) == false ){
+		alert("请输入正确的学号和姓名");
+		return false;
+	}
+	else
+		return true;
 }
 /*加载完成后执行*/
 window.onload = set;
