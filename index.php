@@ -12,13 +12,14 @@
 			<img src="./img/1.png" alt="抬头">
 		</div>
 		<div id="form">
-			<form action="login.php" method="post">
-			姓名：<input type="text" name="name"> <br />
-			学号: <input type="text" name="id">  <br />
-			<input type="submit" value="提交">
+			<form action="login.php" name="form1" id="submit" method="post">
+			姓名：<input type="text" name="name" placeholder="请在此输入姓名" > <br />
+			学号: <input type="text" name="id" placeholder="请在此输入六位学号" >  <br />
+			<input type="submit"  value="提交">
 			<input type="reset" value="重置">
 		</form>
 		</div>
 	</div>
+	<script src="check.js"></script>
 </body>
 </html>
