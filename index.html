@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <title>表单</title>
+	<meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white">
+    <meta name="format-detection" content="telephone=no">
+	
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+	<div id="all">
+		<div id="img">
+			<img src="img/1.png" alt="picture">
+		</div>
+		<div id="form">
+			<form action="login.php" name="form1" id="submit" method="post">
+				<fieldset>
+					<span class="icon icon-account"></span>  	
+					<input type="text" class="top-input" name="name" placeholder="Student_Name" tabindex="1" required autofocus autocomplete="off">
+				</fieldset>
+				<fieldset>
+					<span class="icon icon-number"></span> 
+					<input type="text" name="id" placeholder="Student_ID"  tabindex="2" required autocomplete="off">
+				</fieldset>
+				<fieldset>
+					<button type="submit" data-submit="...sending">Submit</button>
+					<button type="reset" data-submit="...reseting">Reset</button>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+	<script src="js/check.js"></script>
+	<script src="js/prefixfree.min.js"></script>
+</body>
+</html>
