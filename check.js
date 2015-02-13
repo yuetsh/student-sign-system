@@ -17,7 +17,7 @@ function regex1(nameString){
 }
 /*正则匹配学号*/
 function regex2(idString){
-	var re = /\d{6}/;
+	var re = /\d{8}/;
 	var string = idString;
 	var result = re.exec(string);
 	if (result != null)	
@@ -35,7 +35,7 @@ function check(){
          alert("姓名和学号不能为空");
          return false;
 	}
-	if ( regex1(studentName) && regex2(studentId) == false ){
+	else if ( regex1(studentName) == false || regex2(studentId) == false ){
 		alert("请输入正确的学号和姓名");
 		return false;
 	}

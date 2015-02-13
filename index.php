@@ -14,7 +14,7 @@
 		<div id="form">
 			<form action="login.php" name="form1" id="submit" method="post">
 			姓名：<input type="text" name="name" placeholder="请在此输入姓名" > <br />
-			学号: <input type="text" name="id" placeholder="请在此输入六位学号" >  <br />
+			学号: <input type="text" name="id" placeholder="请在此输入八位学号" >  <br />
 			<input type="submit"  value="提交">
 			<input type="reset" value="重置">
 		</form>
