@@ -77,7 +77,21 @@ fieldset {
     position: absolute;
 }
 .icon.icon-account{
-	
+    background: url("../img/account.png") no-repeat;
+    top: 65px;
+    left: 28%;
+    z-index: 999;
+    width: 16px;
+    height: 16px;
+}
+
+.icon.icon-number{
+    background: url("../img/number.png") no-repeat;
+    top: 120px;
+    left: 28%;
+    z-index: 999;
+    width: 16px;
+    height: 16px;
 }
 
 input{
