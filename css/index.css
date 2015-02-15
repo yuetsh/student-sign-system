@@ -46,14 +46,14 @@ body{
     -webkit-transform: translateX(-50%) translateY(-50%);
             transform: translateX(-50%) translateY(-50%);
 }
-#img img{
-    width: 30%;
+
+img {
+    width: 32%;
     position: fixed;
     top: 0;
     left: 50%;
     height: auto;
     z-index: 999;
-    opacity: 0;
 }
 
 form{
@@ -61,6 +61,7 @@ form{
     border-radius: 15px;
     box-shadow: 0 1px 10px rgba(255,255,255,1);
     position: relative;
+    z-index: 998;
 }
 
 fieldset {
@@ -138,36 +139,26 @@ button:hover {
 
 @-webkit-keyframes animate-up {
     0% {
-        -webkit-transform: translateX(-50%) translateY(-50%);
-        transform: translateX(-50%) translateY(-50%);
+        -webkit-transform: translateX(-50%) translateY(-50%) rotate(-30deg);
+        transform: translateX(-50%) translateY(-50%) rotate(-30deg);
         opacity: 0;
     }
-    40% {
-        -webkit-transform: translateX(-50%) translateY(-60%);
-        transform: translateX(-50%) translateY(-60%);
-        opacity: 0.4;
-    }
     100% {
-        -webkit-transform: translateX(-50%) translateY(-70%);
-        transform: translateX(-50%) translateY(-70%);
+        -webkit-transform: translateX(-50%) translateY(-75%) rotate(0deg);
+        transform: translateX(-50%) translateY(-75%) rotate(0deg);
         opacity: 1;
     }
 }
 
 @keyframes animate-up {
     0% {
-        -webkit-transform: translateX(-50%) translateY(-50%);
-        transform: translateX(-50%) translateY(-50%);
+        -webkit-transform: translateX(-50%) translateY(-50%) rotate(-30deg);
+        transform: translateX(-50%) translateY(-50%) rotate(-30deg);
         opacity: 0;
     }
-    40% {
-        -webkit-transform: translateX(-50%) translateY(-60%);
-        transform: translateX(-50%) translateY(-60%);
-        opacity: 0.4;
-    }
     100% {
-        -webkit-transform: translateX(-50%) translateY(-70%);
-        transform: translateX(-50%) translateY(-70%);
+        -webkit-transform: translateX(-50%) translateY(-75%) rotate(0deg);
+        transform: translateX(-50%) translateY(-75%) rotate(0deg);
         opacity: 1;
     }
 }
@@ -177,25 +168,35 @@ button:hover {
     animation: animate-up 1.2s ease-out 0 both;
 }
 
-@-webkit-keyframes animate-show {
+@-webkit-keyframes animate-down {
     0% {
         opacity: 0;
+        -webkit-transform: translateX(0) translateY(-25%) rotate(-30deg);
+        transform: translateX(0) translateY(-25%) rotate(-30deg);
     }
+
     100% {
         opacity: 1;
+        -webkit-transform: none;
+        transform: none;
     }
 }
 
-@keyframes animate-show {
+@keyframes animate-down {
     0% {
         opacity: 0;
+        -webkit-transform: translateX(0) translateY(-25%) rotate(-30deg);
+        transform: translateX(0) translateY(-25%) rotate(-30deg);
     }
+
     100% {
         opacity: 1;
+        -webkit-transform: none;
+        transform: none;
     }
 }
 
-.animate-show {
-    -webkit-animation: animate-show 1.2s ease 0.5s both;
-    animation: animate-show 1.2s ease 0.5s both;
+.animate-down {
+    -webkit-animation: animate-down 1.2s ease-out 0.2s both;
+    animation: animate-down 1.2s ease-out 0.2s both;
 }
