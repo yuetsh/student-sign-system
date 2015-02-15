@@ -1,16 +1,19 @@
 /*CSS-RESET*/
 * { margin: 0; padding: 0;
-	box-sizing: border-box; 
-	-webkit-font-smoothing:antialiased;
-	   -moz-font-smoothing:antialiased;
-	     -o-font-smoothing:antialiased;
-	        font-smoothing:antialiased;
-	text-rendering:optimizeLegibility;
+    box-sizing: border-box;
 }
 html {}
 body { background: #fff; color: #363636; overflow: hidden; }
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, select, option 
-{ margin: 0; padding: 0; border: 0; vertical-align: baseline; font-family: "Î¢ÈíÑÅºÚ", Arial, Helvetica, sans-serif; -webkit-text-size-adjust:none;  }
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, select, option {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    font-family: "微软雅黑", Arial, Helvetica, sans-serif;
+    -webkit-text-size-adjust: none;
+}
+
 h1, h2, h3, h4, h5, h6 { font-weight: normal; }
 img, iframe, fieldset, button, input { border: none; }
 img { vertical-align:top; }
@@ -29,48 +32,41 @@ a { color: #3e3e3e; outline: none;text-decoration: none; }
 /*CSS-STYLE*/
 body{
     background: url("../img/bg.jpg");
+    position: relative;
 }
 
 #all{
-	position: fixed;
-  	top: 50%;
-  	left: 50%;
-  	width: 30%;
-  	max-width: 630px;
-  	min-width: 320px;
-  	height: auto;
-  	-webkit-transform: translateX(-50%) translateY(-50%);
-       -moz-transform: translateX(-50%) translateY(-50%);
-  	    -ms-transform: translateX(-50%) translateY(-50%);
-         -o-transform: translateX(-50%) translateY(-50%);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 30%;
+    max-width: 630px;
+    min-width: 320px;
+    height: auto;
+    -webkit-transform: translateX(-50%) translateY(-50%);
             transform: translateX(-50%) translateY(-50%);
 }
 #img img{
-	width: 30%;
-	height: 30%;
-	position: fixed;
-  	top: 0;
-  	left: 50%;
-  	height: auto;
-  	z-index: 999;
-  	-webkit-transform: translateX(-50%) translateY(-70%);
-       -moz-transform: translateX(-50%) translateY(-70%);
-  	    -ms-transform: translateX(-50%) translateY(-70%);
-         -o-transform: translateX(-50%) translateY(-70%);
-            transform: translateX(-50%) translateY(-70%);
+    width: 30%;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    height: auto;
+    z-index: 999;
+    opacity: 0;
 }
 
 form{
     background-color: rgba(255,255,255,0.3);
     border-radius: 15px;
     box-shadow: 0 1px 10px rgba(255,255,255,1);
-	position: relative;
+    position: relative;
 }
 
 fieldset {
-	min-width: 100%;
-	padding: 0;
-	width: 100%;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
 }
 
 .icon{
@@ -92,18 +88,17 @@ fieldset {
 }
 
 input{
-	outline:0;
-	width: 50%;
-	border: 2px solid #fff;
-	border-radius: 5px;
-	background-color: rgba(0, 0, 0, 0);
-	color: #263A41;
-	margin-top: 20px;
-	margin-left: 25%;
-	padding: 5px;
-    padding-left: 32px;
-	font-size: 16px;
-	font-family: "微软雅黑"!important;
+    outline: 0;
+    width: 50%;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0);
+    color: #263A41;
+    margin-top: 20px;
+    margin-left: 25%;
+    padding: 5px 5px 5px 32px;
+    font-size: 16px;
+    font-family: "微软雅黑" !important;
 }
 
 input:hover{}
@@ -111,33 +106,96 @@ input:hover{}
 input:focus{}
 
 input.top-input{
-	margin-top:55px; 
+    margin-top: 55px;
 }
 
 button{
-	width:20%;
-	color:#fff;
-	margin: 25px 0;
-	padding: 5px;
-	border: 2px solid #fff;
-	border-radius: 5px;
-	font-size: 16px;
-	font-family: "微软雅黑" !important;
-	-webkit-transition:background 0.3s linear;
-	   -moz-transition:background 0.3s linear;
-	    -ms-transition:background 0.3s linear;
-	     -o-transition:background 0.3s linear;
-	        transition:background 0.3s linear;
+    width: 20%;
+    color: #fff;
+    margin: 25px 0;
+    padding: 5px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: "微软雅黑" !important;
+    transition: color 0.3s linear;
+    transition: background 0.3s linear;
 }
 button[type=submit]{
-	margin-left: 25%;
+    margin-left: 25%;
 }
 
 button[type=reset]{
-	margin-left: 9%;
+    margin-left: 9%;
 }
 
 button:hover {
-	background:#fff;
-	color: #263A41;
+    background: #fff;
+    color: #263A41;
+}
+
+/*ANIMATE*/
+
+@-webkit-keyframes animate-up {
+    0% {
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+        opacity: 0;
+    }
+    40% {
+        -webkit-transform: translateX(-50%) translateY(-60%);
+        transform: translateX(-50%) translateY(-60%);
+        opacity: 0.4;
+    }
+    100% {
+        -webkit-transform: translateX(-50%) translateY(-70%);
+        transform: translateX(-50%) translateY(-70%);
+        opacity: 1;
+    }
+}
+
+@keyframes animate-up {
+    0% {
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+        opacity: 0;
+    }
+    40% {
+        -webkit-transform: translateX(-50%) translateY(-60%);
+        transform: translateX(-50%) translateY(-60%);
+        opacity: 0.4;
+    }
+    100% {
+        -webkit-transform: translateX(-50%) translateY(-70%);
+        transform: translateX(-50%) translateY(-70%);
+        opacity: 1;
+    }
+}
+
+.animate-up {
+    -webkit-animation: animate-up 1.2s ease-out 0 both;
+    animation: animate-up 1.2s ease-out 0 both;
+}
+
+@-webkit-keyframes animate-show {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes animate-show {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.animate-show {
+    -webkit-animation: animate-show 1.2s ease 0.5s both;
+    animation: animate-show 1.2s ease 0.5s both;
 }
